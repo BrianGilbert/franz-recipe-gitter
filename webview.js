@@ -9,7 +9,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 module.exports = Franz => {
   const getMessages = function getMessages() {
     // get unread messages
-    const count = document.querySelectorAll('.guilds-wrapper .badge').length;
+    const count = document.querySelectorAll('.guilds-wrapper .badge, .room-menu-options__item__unread-indicator-wrapper.has-unreads').length;
 
     // set Franz badge
     Franz.setBadge(count);
